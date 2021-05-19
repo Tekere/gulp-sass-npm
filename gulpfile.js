@@ -24,7 +24,7 @@ gulp.task('sass', function () {
 	return (
 		gulp
 			// Sassのコンパイルを実行
-			.src('./src/scss/*.scss')
+			.src('./scss/*.scss')
 			//sourcemap 読み込み srcの直後
 			.pipe(sourcemaps.init())
 			//エラーが出ても落ちないようにして、ターミナルにエラーメッセージを出す
@@ -50,7 +50,7 @@ gulp.task('sass', function () {
 //  すべての監視
 //====================
 gulp.task('watch', () => {
-	gulp.watch('./src/scss/*.scss', gulp.series('sass'))
+	gulp.watch('./scss/*.scss', gulp.series('sass'))
 })
 
 //====================
